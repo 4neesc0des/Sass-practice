@@ -1,0 +1,23 @@
+html,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+@mixin shadow {
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    width: 10rem;
+    height: 10rem;
+}
+
+.containers {
+    margin: 5rem;
+    text-align: center;
+    background-color: #eee;
+    @include shadow;
+}
